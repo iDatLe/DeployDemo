@@ -10,7 +10,7 @@ app.get("/", function(req, res){
 app.get("/about", function(req, res){
 	res.render("about");
 });
-
-app.listen(3000, function(){
+var port = process.env.PORT || 3000;
+app.listen(port, function(){
 	console.log("You have deployed Demo")
 });
